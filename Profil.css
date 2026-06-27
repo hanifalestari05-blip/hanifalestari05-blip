@@ -178,18 +178,17 @@ body::after {
   display: none;
 }
 
-.hero-image img {
-  width: 280px;
-  height: 280px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center top;
-  clip-path: circle(50%);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+.hero-image {
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    background-image: url('WhatsApp Image 2026-06-26 at 04.57.39 copy.jpeg')
+    background-size: cover;
+    background-position: center;
+    width: 280px; 
+    height: 280px;
+    border-radius: 50%;
 }
-
 @media (max-width: 480px) {
   .hero-image img {
     width: 220px;
