@@ -165,20 +165,6 @@ body::after {
 }
 
 .hero-image {
-  flex-shrink: 0;
-  position: relative;
-  display: inline-block;
-}
-
-.hero-image::before {
-  display: none;
-}
-
-.hero-image::after {
-  display: none;
-}
-
-.hero-image {
     flex-shrink: 0;
     width: 200px;
     height: 200px;
