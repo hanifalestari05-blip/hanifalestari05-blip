@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffaf7;
+    color:#333;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#ff7b00;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff7b00;
+}
+
+/* ================= HOME ================= */
+
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    padding:60px 10%;
+    flex-wrap:wrap;
+}
+
+.home img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.home-text{
+    max-width:550px;
+}
+
+.home-text h3{
+    color:#ff7b00;
+}
+
+.home-text h1{
+    font-size:50px;
+    margin:10px 0;
+}
+
+.home-text span{
+    color:#ff7b00;
+}
+
+.home-text p{
+    line-height:30px;
+    margin:20px 0;
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#ff7b00;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e96f00;
+    transform:translateY(-3px);
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:#ff7b00;
+    margin-bottom:50px;
+}
+
+/* ================= PROFIL ================= */
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:350px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text p{
+    line-height:30px;
+    text-align:justify;
+}
+
+/* ================= FAVORITE ================= */
+
+.favorite-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#ff7b00;
+    margin-bottom:15px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-item{
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-item a{
+    color:#333;
+    text-decoration:none;
+}
+
+.contact-item a:hover{
+    color:#ff7b00;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#ff7b00;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .home{
+        text-align:center;
+    }
+
+    .home h1{
+        font-size:36px;
+    }
+
+    .home img{
+        width:250px;
+        height:250px;
+    }
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-text p{
+        text-align:center;
+    }
+
+    .about img{
+        width:280px;
+    }
+
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    color: rgb(247, 20, 20);
+    padding: 15px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .navbar-logo h1 {
+    font-size: 50px;
+    color: rgb(224, 97, 17);
+}
+
+.navbar .navbar-logo .tec {
+    color: rgb(58, 240, 112);
+}
+
+.navbar ul {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(240, 236, 235);
+    transition: 0.3s ease;
+}
+
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: -5px;
+    background-color: rgb(184, 11, 118);
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover::before {
+    width: 100%;
+}
+
+.navbar ul li a:hover {
+    color: rgb(247, 23, 105)
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('bakso.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.home .isi {
+    padding: 1.4rem 7%;
+    max-width: 50rem;
+}
+
+.isi a {
+    text-decoration: none;
+}
+
+.isi h1 {
+    margin-top: 1rem;
+    font-size: 45px;
+    color: white;
+    line-height: 1.2;
+    background-color:rgb(177, 244, 53);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.isi p {
+    font-size: 18px;
+    color: rgb(241, 241, 232);
+    font-weight: 300;
+    margin-top: 1rem;
+    text-shadow: rgb(242, 243, 242);
+}
+
+.isi .cta {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(32, 205, 32);
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.isi .cta:hover {
+    background-color: #0e540e;
+    transform: translateY(-2px);
+}
