@@ -182,7 +182,7 @@ body::after {
     flex-shrink: 0;
     position: relative;
     display: inline-block;
-    background-image: url('WhatsApp Image 2026-06-26 at 04.57.39 copy.jpeg')
+    background-image: url('WhatsApp Image 2026-06-26 at 04.57.39 copy.jpeg');
     background-size: cover;
     background-position: center;
     width: 280px; 
