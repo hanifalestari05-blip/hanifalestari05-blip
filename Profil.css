@@ -180,20 +180,19 @@ body::after {
 
 .hero-image {
     flex-shrink: 0;
-    position: relative;
-    display: inline-block;
-    background-image: url('WhatsApp Image 2026-06-26 at 04.57.39 copy.jpeg');
+    width: 200px;
+    height: 200px;
+    background-image: url('WhatsApp Image 2026-06-26 at 04.57.39 copy.jpeg'); 
     background-size: cover;
     background-position: center;
-    width: 280px; 
-    height: 280px;
     border-radius: 50%;
+    margin: 0 auto; 
 }
+
 @media (max-width: 480px) {
-  .hero-image img {
-    width: 220px;
-    height: 220px;
-  }
+    .hero-image {
+        width: 150px;
+        height: 150px;
 }
 
 .profile-intro {
